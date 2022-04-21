@@ -4,35 +4,41 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Categories', [
       {
-        name: 'gourmet',
-        imgPath: '/src/assets/categories/food.jpg',
+        name: 'Cocina',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/cocina.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00',
       },
       {
-        name: 'postre',
-        imgPath: '/src/assets/categories/pizza.jpg',
+        name: 'Postres',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/postre1.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00',
       },
       {
-        name: 'bebida',
-        imgPath: '/src/assets/categories/bar.jpg',
+        name: 'Bebidas',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/bar.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00',
       },
       {
-        name: 'bebida-bar',
-        imgPath: '/src/assets/categories/hamburguer.jpg',
+        name: 'Mixología',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/bar.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00',
       },
       {
-        name: 'desayuno',
-        imgPath: '/src/assets/categories/food.jpg',
+        name: 'Desayunos',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/postre1.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00',
-      }
+      },
+      {
+        name: 'Cervecería',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/altoGolfoLogo.jpg',
+        createdAt: '2022-04-13 12:00:00',
+        updatedAt: '2022-04-13 12:00:00',
+      },
     ], {});
   },
 

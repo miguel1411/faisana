@@ -7,7 +7,7 @@ module.exports = {
         name: 'faisana',
         street: 'Av.Zaragoza 17',
         status: true,
-        imgPath: '/src/assets/img/faisanaLogo.jpg',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/faisanaLogo.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00'
       },
@@ -15,7 +15,7 @@ module.exports = {
         name: 'bohemio',
         street: 'Av.Obregón y 8',
         status: true,
-        imgPath: '/src/assets/img/bohemioLogo.jpg',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/bohemioLogo.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00'
       },
@@ -23,7 +23,7 @@ module.exports = {
         name: 'alto golfo',
         street: 'Av.Zaragoza 17',
         status: true,
-        imgPath: '/src/assets/img/altoGolfoLogo.jpg',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/altoGolfoLogo.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00'
       }
