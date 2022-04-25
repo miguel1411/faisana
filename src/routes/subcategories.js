@@ -30,7 +30,6 @@ router.get('/getAllsubcategories/:restaurantId/:categoryId', async(req, res, nex
       include: ['Category', 'Restaurant', 'Subcategory'],
       group: "Subcategory.name",
     });
-    console.log(request);
     return res.status(200).send(request);
   } catch (error) {
     next(error);
