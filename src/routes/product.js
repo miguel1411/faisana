@@ -11,13 +11,14 @@ const {
 } = require('../../models');
 
 // Función para obtener todos los productos de determinado restaurante y determinada categoria
-router.get('/getAllProduct/:restaurantId/:categoryId', async (req,res, next) => {
+router.get('/getAllProduct/:restaurantId/:categoryId/:subcategoryId', async (req,res, next) => {
   try {
-    const { restaurantId, categoryId } = req.params;
+    const { restaurantId, categoryId, subcategoryId } = req.params;
     const request = await Product.findAll({
       where: {
         restaurantId,
-        categoryId
+        categoryId,
+        subcategoryId
       },
     });
     return res.status(200).send(request);

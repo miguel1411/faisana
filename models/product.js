@@ -7,9 +7,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Product.belongsTo(models.Category);
       Product.belongsTo(models.Restaurant);
-      Product.hasMany(models.Multimedia, {
-        foreignKey: 'productId',
-      });
+      Product.hasMany(models.Multimedia, { foreignKey: 'productId' });
+      Product.belongsTo(models.Subcategories, { foreignKey: 'subcategoryId',} );
     }
   }
   Product.init({
@@ -20,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     imgPath: DataTypes.STRING,
     categoryId: DataTypes.INTEGER,
     restaurantId: DataTypes.INTEGER,
+    subcategoryId: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Product',

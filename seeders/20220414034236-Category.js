@@ -10,7 +10,7 @@ module.exports = {
         updatedAt: '2022-04-13 12:00:00',
       },
       {
-        name: 'Postres',
+        name: 'Panadería y Repostería',
         imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/postre1.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00',
@@ -35,6 +35,12 @@ module.exports = {
       },
       {
         name: 'Cervecería',
+        imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/altoGolfoLogo.jpg',
+        createdAt: '2022-04-13 12:00:00',
+        updatedAt: '2022-04-13 12:00:00',
+      },
+      {
+        name: 'Alto Golfo',
         imgPath: 'https://faisanaspace-miguel.sfo3.digitaloceanspaces.com/altoGolfoLogo.jpg',
         createdAt: '2022-04-13 12:00:00',
         updatedAt: '2022-04-13 12:00:00',
