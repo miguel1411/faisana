@@ -5,10 +5,13 @@ const {
   sequelize,
 } = require('../../models');
 
-router.get('/getallCategory/:restaurantId', async (req, res, next) => {
+router.get('/getallcategory/:restaurantId', async (req, res, next) => {
   try {
     const { restaurantId } = req.params;
     const request = await Product.findAll({
+      attributes: [
+        [sequelize.fn('COUNT', sequelize.col('Product.id')), 'totalProducts'],
+      ],
       where : {
         restaurantId,
       },
