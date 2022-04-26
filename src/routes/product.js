@@ -4,9 +4,6 @@ const { QueryTypes } = require('sequelize');
 
 const {
   Product,
-  Multimedia,
-  Category,
-  Restaurant,
   sequelize
 } = require('../../models');
 

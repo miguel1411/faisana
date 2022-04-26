@@ -1,22 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const {
-  Restaurant,
-  Category,
   Product,
-  CategoryInRestaurant,
   sequelize,
 } = require('../../models');
 
-router.get('/getallCategory/:restauranteId', async (req, res, next) => {
+router.get('/getallCategory/:restaurantId', async (req, res, next) => {
   try {
-    const { restauranteId } = req.params;
+    const { restaurantId } = req.params;
     const request = await Product.findAll({
-      attributes: [
-        [sequelize.fn('COUNT', sequelize.col('Product.id')), 'totalProducts'],
-      ],
       where : {
-        restaurantId: restauranteId,
+        restaurantId,
       },
       include: ['Category', 'Restaurant'],
       group: "Category.name",
