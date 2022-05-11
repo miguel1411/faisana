@@ -13,10 +13,13 @@
   "author": "jesus miguel corona lopez",
   "license": "MIT",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.0.1",
     "connect-history-api-fallback": "^1.6.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "multer": "^1.4.4",
     "multer-s3": "^2.10.0",
