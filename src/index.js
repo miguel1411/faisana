@@ -17,6 +17,8 @@ app.use('/api/restaurant', require('./routes/restaurant'));
 app.use('/api/product', require('./routes/product'));
 app.use('/api/category', require('./routes/category'));
 app.use('/api/subcategories', require('./routes/subcategories'));
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/user', require('./routes/user'));
 
 // Middleware para Vue.js router modo history
 const history = require('connect-history-api-fallback');
