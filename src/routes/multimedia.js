@@ -18,11 +18,10 @@ router.get('/getallrestaurants', async (req,res, next) => {
 router.get('/getAllProductImg/:productId', async(req, res, next) => {
   try {
     const { productId } = req.params;
-    const request = await Product.findAll({
+    const request = await Multimedia.findAll({
       where: {
-        id : productId,
-      },
-      include: ['Multimedia']
+        productId,
+      }
     });
     if (request) {
       return res.status(200).send(request);

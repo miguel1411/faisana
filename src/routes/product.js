@@ -55,4 +55,18 @@ router.get('/getCountProducts/:categoryId', async(req, res, next) => {
   }
 });
 
+// Función para obtener un Producto
+router.get('/getProduct/:productId', async(req, res, next) => {
+  try {
+    const { productId } = req.params;
+    const request = await sequelize.query(
+      `SELECT * FROM Products WHERE Products.id = ${productId}`,
+      { type: QueryTypes.SELECT }
+    );
+    return res.status(200).send(request);
+  } catch(err) {
+    next(err);
+  }
+});
+
 module.exports = router;
